@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "22f2033175a0c625",
+    "type": "split",
+    "children": [
+      {
+        "id": "14f4a74c91dfbd2a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "性能分析.md",
+            "mode": "source"
+          }
+        },
+        "group": "cd2e66b0e085abbf"
+      },
+      {
+        "id": "17740b9fbaa3447c",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "性能分析.md",
+            "mode": "preview"
+          }
+        },
+        "group": "cd2e66b0e085abbf"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7bf0b29629885403",
+    "type": "split",
+    "children": [
+      {
+        "id": "37c8757c16e3513f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e19a2f71e4a1347e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "47825c44f9d314ea",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b34d1218ec763ad4",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2ec5362a47054bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3eb85bef796c45d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "性能分析.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "lastOpenFiles": [
+    "性能分析.md",
+    "pidstat命令.md",
+    "vmstat命令.md",
+    "top命令.md",
+    "Java 基本功.md",
+    "代理模式.md",
+    "CGLIB动态代理机制.md",
+    "JDK 动态代理机制.md",
+    "静态代理机制.md",
+    "p2ulu7lk.bmp"
+  ]
+}

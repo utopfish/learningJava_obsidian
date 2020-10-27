@@ -1,0 +1,4 @@
+- String 类是被 final 进行修饰的，不能被继承
+- 在用 + 号链接字符串的时候会创建新的字符串
+- String s = new String("Hello world"); 可能创建两个对象也可能创建一个对象。如果静态区中有 “Hello world” 字符串常量对象的话，则仅仅在堆中创建一个对象。如果静态区中没有 “Hello world” 对象，则堆上和静态区中都需要创建对象。
+- 在 Java 中, 通过使用 "+" 符号来串联字符串的时候,，实际上底层会转成通过 StringBuilder 实例的 append() 方法来实现。
