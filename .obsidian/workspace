@@ -4,29 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "14f4a74c91dfbd2a",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "性能分析.md",
-            "mode": "source"
-          }
-        },
-        "group": "cd2e66b0e085abbf"
-      },
-      {
-        "id": "17740b9fbaa3447c",
+        "id": "f43708c263534d31",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "性能分析.md",
+            "file": "Java并发编程（小部分内容未整理）.md",
+            "mode": "source"
+          }
+        },
+        "group": "cf77b1d3a69453de"
+      },
+      {
+        "id": "cbfe11223b38339e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Java并发编程（小部分内容未整理）.md",
             "mode": "preview"
           }
         },
-        "group": "cd2e66b0e085abbf"
+        "group": "cf77b1d3a69453de"
       }
     ],
     "direction": "vertical"
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ""
+                "query": "单例模式"
               }
             }
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "性能分析.md"
+                "file": "Java并发编程（小部分内容未整理）.md"
               }
             }
           }
@@ -88,15 +88,15 @@
     "width": 300
   },
   "lastOpenFiles": [
-    "性能分析.md",
-    "pidstat命令.md",
-    "vmstat命令.md",
-    "top命令.md",
-    "Java 基本功.md",
+    "Java并发编程（部分内容未整理）.md",
+    "JVM体系结构.md",
+    "设计模式.md",
+    "在代理模式（Proxy Pattern）.md",
     "代理模式.md",
+    "Java 基本功.md",
+    "单例模式（Singleton Pattern）.md",
+    "多线程/单例模式.md",
     "CGLIB动态代理机制.md",
-    "JDK 动态代理机制.md",
-    "静态代理机制.md",
-    "p2ulu7lk.bmp"
+    "pidstat命令.md"
   ]
 }
