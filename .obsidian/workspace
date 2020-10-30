@@ -6,29 +6,14 @@
       {
         "id": "20f76e5423e4ffd7",
         "type": "leaf",
-        "dimension": 52,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "字节后端面试整理.md",
-            "mode": "source"
-          }
-        },
-        "group": "43d3043122f391a2"
-      },
-      {
-        "id": "1d00b2e6f68fd6e6",
-        "type": "leaf",
-        "dimension": 48,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "字节后端面试整理.md",
+            "file": "多线程/J.U.C - AQS.md",
             "mode": "preview"
           }
-        },
-        "group": "43d3043122f391a2"
+        }
       }
     ],
     "direction": "vertical"
@@ -59,8 +44,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -80,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "字节后端面试整理.md"
+                "file": "多线程/J.U.C - AQS.md"
               }
             }
           }
@@ -88,18 +72,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 100
+    "width": 324
   },
   "lastOpenFiles": [
-    "字节后端面试整理.md",
-    "HashMap底层实现.md",
-    "多线程/线程安全.md",
-    "基础知识点/如果重写equals不重写hashcode会出现什么问题？.md",
-    "多线程/静态集合类.md",
-    "分段锁.md",
-    "多线程/多线程开发良好的实践.md",
-    "ZooKeeper.md",
-    "Untitled.md",
-    "多线程/进程间通信 IPC（Inter-Process Communication）.md"
+    "多线程/J.U.C - AQS.md",
+    "Java并发编程（小部分内容未整理）.md",
+    "多线程/中断.md",
+    "多线程/基础线程机制.md",
+    "多线程/CAS与synchronized的使用情景.md",
+    "多线程/Atomic 与 CAS 待完善.md",
+    "轻量级锁.md",
+    "多线程/volatile 关键字的如何保证内存可见性.md",
+    "多线程/volatile 与 synchronized 的区别.md",
+    "计算机网络总纲.md"
   ]
 }
