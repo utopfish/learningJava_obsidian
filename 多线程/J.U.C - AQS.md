@@ -32,8 +32,6 @@ CountDownLatch 类位于 java.util.concurrent 包下，利用它可以实现类�
 
 维护了一个计数器 cnt，每次调用 countDown() 方法会让计数器的值减 1，减到 0 的时候，那些因为调用 await() 方法而在等待的线程就会被唤醒。
 
-<div align="center"> <img src="assets/CountdownLatch.png" width=""/></div>
-
 
 
 CountDownLatch 类只提供了一个构造器：

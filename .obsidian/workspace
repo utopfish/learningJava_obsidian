@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "多线程/J.U.C - AQS.md",
-            "mode": "preview"
+            "file": "Java 基本功.md",
+            "mode": "source"
           }
         }
       }
@@ -40,11 +40,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "HashMap"
+                "query": "对象"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -64,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "多线程/J.U.C - AQS.md"
+                "file": "Java 基本功.md"
               }
             }
           }
@@ -72,18 +73,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324
+    "width": 134
   },
   "lastOpenFiles": [
-    "多线程/J.U.C - AQS.md",
-    "Java并发编程（小部分内容未整理）.md",
-    "多线程/中断.md",
-    "多线程/基础线程机制.md",
-    "多线程/CAS与synchronized的使用情景.md",
-    "多线程/Atomic 与 CAS 待完善.md",
-    "轻量级锁.md",
-    "多线程/volatile 关键字的如何保证内存可见性.md",
-    "多线程/volatile 与 synchronized 的区别.md",
-    "计算机网络总纲.md"
+    "Java 基本功.md",
+    "字节后端面试整理.md",
+    "性能分析/性能分析.md",
+    "基础知识点/类的生命周期.md",
+    "基础知识点/ConcurrentHashMap.md",
+    "基础知识点/BIO，NIO，AIO总结.md",
+    "基础知识点/NIO.md",
+    "基础知识点/BIO.md",
+    "基础知识点/文件与IO流.md",
+    "基础知识点/Java集合（待添加基本list,map,set相关的知识）.md"
   ]
 }
