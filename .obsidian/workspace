@@ -4,31 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "f43708c263534d31",
+        "id": "20f76e5423e4ffd7",
         "type": "leaf",
-        "dimension": 73.96616541353383,
+        "dimension": 52,
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "字节后端面试整理.md",
             "mode": "source"
           }
         },
-        "group": "3936fc57548b500b"
+        "group": "43d3043122f391a2"
       },
       {
-        "id": "db4eea50753d9e6b",
+        "id": "1d00b2e6f68fd6e6",
         "type": "leaf",
-        "dimension": 26.033834586466163,
+        "dimension": 48,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "字节后端面试整理.md",
             "mode": "preview"
           }
         },
-        "group": "3936fc57548b500b"
+        "group": "43d3043122f391a2"
       }
     ],
     "direction": "vertical"
@@ -55,15 +55,16 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DNS"
+                "query": "HashMap"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 624
+    "width": 314
   },
   "right": {
     "id": "b34d1218ec763ad4",
@@ -79,7 +80,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md"
+                "file": "字节后端面试整理.md"
               }
             }
           }
@@ -87,18 +88,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 100
   },
   "lastOpenFiles": [
-    "Untitled.md",
     "字节后端面试整理.md",
-    "计算机网络/域名系统 DNS（Domain Name System）.md",
-    "红黑树.md",
-    "操作系统.md",
-    "布隆过滤器.md",
-    "Redis 中的布隆过滤器.md",
-    "Google开源的 Guava中自带的布隆过滤器.md",
-    "Java 编程手动实现布隆过滤器.md",
-    "进程的调度算法.md"
+    "HashMap底层实现.md",
+    "多线程/线程安全.md",
+    "基础知识点/如果重写equals不重写hashcode会出现什么问题？.md",
+    "多线程/静态集合类.md",
+    "分段锁.md",
+    "多线程/多线程开发良好的实践.md",
+    "ZooKeeper.md",
+    "Untitled.md",
+    "多线程/进程间通信 IPC（Inter-Process Communication）.md"
   ]
 }

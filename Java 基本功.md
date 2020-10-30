@@ -13,6 +13,8 @@
 10. [[编译型、解释型、脚本语言]]
 
 
+[[Java三大特性：封装，继承，多态]]
+
 
 ### 待整理知识点
 [[ValueOf缓存池]]
@@ -40,7 +42,7 @@
 
  [[Collection]]
 [[Map]]
-[[ConcurrentHashMap]]
+[[基础知识点/ConcurrentHashMap]]
 　
  ## [[Java并发编程（小部分内容未整理）]]
  ……

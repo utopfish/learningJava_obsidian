@@ -36,15 +36,19 @@
 #### volatile 关键字
 1. Java 内存模型(JMM)。
 2. 重排序与 happens-before 原则了解吗？
-3. volatile 关键字的作用。
-4. [[volatile 与 synchronized 的区别]]
-5. [[volatile 关键字的如何保证内存可见性]]
+3. [[volatile 关键字的作用]]。
+4. **禁止进行指令重排序**
+5. volatile能保证可见性不能保证原子性：`java.util.concurrent.atomic`包提供原子性操作，对自增，自减，加法，减法进行了封装。`atomic`使用`CAS`实现原子性操作。`CAS`实际上是利用处理器提供的 `CMPXCHG` 指令实现的，而处理器执行 `CMPXCHG` 指令是一个原子性操作。
+6. [[volatile 与 synchronized 的区别]]
+7. [[volatile 关键字的如何保证内存可见性]]
 
 #### synchronized 关键字
 1. 简介
 [[synchronized与lock的区别]]
 [[Synchronized（对象锁）和Static Synchronized（类锁）区别]]
 [[volatile 与 synchronized 的区别]]
+synchronized 和 Lock 也能够保证可见性，synchronized 和 Lock 能保证同一时刻只有一个线程获取锁然后执行同步代码，并且 在释放锁之前会将对变量的修改刷新到主存当中，因此可以保证可见性
+不能由于 synchronized 和 Lock 可以让线程串行执行同步代码，就说它们可以保证指令不会发生重排序
 #### ThreadLocal
 1. 原理与作用。
 2. 对应的内存泄露问题。
@@ -55,13 +59,16 @@
 
 #### 锁
 在多用户环境中，在同一时间可能会有多个用户更新相同的记录，这会产生冲突。这就是著名的并发性问题，因此需要引入**锁**。
+
+**无锁状态**，**[[偏向锁]]状态**，**[[轻量级锁]]状态**和**[[重量级锁]]状态**，它会随着竞争情况逐渐升级。锁可以升级但不能降级，意味着偏向锁升级成轻量级锁后不能降级成偏向锁。这种锁升级却不能降级的策略，目的是为了提高获得锁和释放锁的效率。
 1. 可重入锁和非可重入锁
 2. 公平锁和非公平锁
 3. 读写锁和排他锁
 4. [[乐观锁和悲观锁]]
  悲观锁：假定会发生并发冲突
  乐观锁：假设不会发生并发冲突
-
+5. [[偏向锁]]
+6. [[自旋锁]]
 [[Atomic 与 CAS 待完善]]
 
 ## 3. [[基础线程机制]]
@@ -139,15 +146,15 @@ AQS 是  AbstractQueuedSynchronizer （抽象的队列式同步器）的简称�
 - [[线程间通信#wait notify 机制]]
 - [[线程间通信#管道通信]]
 
-### [[进程间通信]]
-- [[进程间通信#管道（Pipe）]]
-- [[进程间通信#命名管道（named pipe）]]
-- [[进程间通信#信号（Signal）]]
-- [[进程间通信#消息（Message）队列]]
-- [[进程间通信#共享内存]]
-- [[进程间通信#内存映射（mapped memory）]]
-- [[进程间通信#信号量（semaphore）]]
-- [[进程间通信#套接口（Socket）]]
+### [[进程间通信 IPC（Inter-Process Communication）]]
+- [[进程间通信 IPC（Inter-Process Communication）#管道（Pipe）]]
+- [[进程间通信 IPC（Inter-Process Communication）#命名管道（named pipe）]]
+- [[进程间通信 IPC（Inter-Process Communication）#信号（Signal）]]
+- [[进程间通信 IPC（Inter-Process Communication）#消息（Message）队列]]
+- [[进程间通信 IPC（Inter-Process Communication）#共享内存]]
+- [[进程间通信 IPC（Inter-Process Communication）#内存映射（mapped memory）]]
+- [[进程间通信 IPC（Inter-Process Communication）#信号量（semaphore）]]
+- [[进程间通信 IPC（Inter-Process Communication）#套接口（Socket）]]
 
 ## 10. [[同步和异步，阻塞和非阻塞]]？
 
