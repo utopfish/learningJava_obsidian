@@ -8,25 +8,9 @@
         "type": "leaf",
         "active": true,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Java并发编程（小部分内容未整理）.md",
-            "mode": "source"
-          }
-        },
-        "group": "cf77b1d3a69453de"
-      },
-      {
-        "id": "cbfe11223b38339e",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Java并发编程（小部分内容未整理）.md",
-            "mode": "preview"
-          }
-        },
-        "group": "cf77b1d3a69453de"
+          "type": "graph",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -76,9 +60,7 @@
             "type": "leaf",
             "state": {
               "type": "backlink",
-              "state": {
-                "file": "Java并发编程（小部分内容未整理）.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -88,15 +70,15 @@
     "width": 300
   },
   "lastOpenFiles": [
+    "Java 基本功.md",
+    "多线程/线程池实现原理.md",
+    "基础知识点/线程状态转换.md",
+    "Java并发编程（小部分内容未整理）.md",
     "Java并发编程（部分内容未整理）.md",
     "JVM体系结构.md",
     "设计模式.md",
     "在代理模式（Proxy Pattern）.md",
     "代理模式.md",
-    "Java 基本功.md",
-    "单例模式（Singleton Pattern）.md",
-    "多线程/单例模式.md",
-    "CGLIB动态代理机制.md",
-    "pidstat命令.md"
+    "单例模式（Singleton Pattern）.md"
   ]
 }
