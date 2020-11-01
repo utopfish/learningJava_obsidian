@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "a9203efceacc2083",
+        "id": "eab22f28cbfd8553",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "[TCP.md",
-            "mode": "source"
+            "file": "多线程/线程池实现原理.md",
+            "mode": "preview"
           }
         }
       }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "[TCP.md"
+                "file": "多线程/线程池实现原理.md"
               }
             }
           }
@@ -75,15 +75,15 @@
     "width": 324
   },
   "lastOpenFiles": [
-    "[TCP.md",
-    "Java并发编程（小部分内容未整理）.md",
-    "多线程/内部类和外部模块等的引用.md",
-    "README.md",
+    "多线程/线程池实现原理.md",
+    "面试知识点/字节后端面试整理.md",
+    "数据库/Mysql 的高可用方案.md",
+    "MVCC.md",
+    "Java 基本功.md",
+    "基础知识点/类的生命周期.md",
+    "性能分析/性能分析.md",
     "设计模式.md",
-    "JVM体系结构.md",
-    "字节流.md",
-    "超文本传输协议 HTTP（HyperText Transfer Protocol).md",
-    "基础知识点/Java和C++的区别.md",
-    "内存管理（未完成）.md"
+    "设计模式/策略模式（Strategy）.md",
+    "设计模式/代理模式（Proxy Pattern）.md"
   ]
 }
