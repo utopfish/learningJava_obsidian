@@ -21,7 +21,7 @@ public static <T> List<T> asList(T... a) {
 ## 《[[阿里巴巴 Java 开发手册]]》对其的描述
 
 `Arrays.asList()` 将数组转换为集合后,底层其实还是数组，《阿里巴巴Java 开发手册》对于这个方法有如下描述：
-![[7yedev9c.bmp]]
+![[阿里巴巴开发手册对Arrays.asList的说明.bmp]]
 
 ## 使用时的注意事项总结
 
