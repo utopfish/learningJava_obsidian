@@ -1,6 +1,6 @@
 AQS 是  AbstractQueuedSynchronizer （抽象的队列式同步器）的简称，java.util.concurrent（J.U.C）大大提高了并发性能，AQS (AbstractQueuedSynchronizer) 被认为是 J.U.C 的核心。它提供了一个基于 FIFO 队列，这个队列可以用来构建锁或者其他相关的同步装置的基础框架。下图是 AQS 的实现：
 
-![[rvizsu1y.bmp]]
+![[AQS 的实现.bmp]]
 它底层使用的是双向列表，是队列的一种实现 , 因此也可以将它当成一种队列。
 
 - Sync queue 是同步列表，它是双向列表 , 包括 head，tail 节点。其中 head 节点主要用来后续的调度 ;
@@ -117,10 +117,6 @@ public class Test {
 
 和 CountdownLatch 相似，都是通过维护计数器来实现的。但是它的计数器是递增的，每次执行 await() 方法之后，计数器会加 1，直到计数器的值和设置的值相等，等待的所有线程才会继续执行。和 CountdownLatch 的另一个区别是，CyclicBarrier 的计数器可以循环使用，所以它才叫做循环屏障。
 
-下图应该从下往上看才正确。
-
-<div align="center"><img src="assets/CyclicBarrier.png" width=""/></div>
-
 
 ```java
 public class CyclicBarrierExample {
@@ -155,9 +151,6 @@ before..before..before..before..before..before..before..before..before..before..
 ### Semaphore
 
 Semaphore 就是操作系统中的信号量，可以控制对互斥资源的访问线程数。Semaphore 可以控同时访问的线程个数，通过 acquire() 获取一个许可，如果没有就等待，而 release() 释放一个许可。
-
-<div align="center"><img src="assets/Semaphore.png" width=""/></div><br/>
-
 Semaphore 类位于 java.util.concurrent 包下，它提供了2个构造器：
 
 ```java

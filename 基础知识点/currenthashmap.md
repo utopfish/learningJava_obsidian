@@ -1,6 +1,6 @@
 主要就是为了应对hashmap在并发环境下不安全而诞生的，ConcurrentHashMap的设计与实现非常精巧，大量的利用了volatile，final，CAS等lock-free技术来减少锁竞争对于性能的影响。
 我们都知道Map一般都是数组+链表结构（JDK1.8该为数组+红黑树）。
-![[r9wwq7vc.bmp]]
+![[数组+链表结构.bmp]]
 ConcurrentHashMap避免了对全局加锁改成了局部加锁操作，这样就极大地提高了并发环境下的操作速度，由于ConcurrentHashMap在JDK1.7和1.8中的实现非常不同，接下来我们谈谈JDK在1.7和1.8中的区别。
 ## JDK1.7版本的CurrentHashMap的实现原理
 Segment(分段锁)-减少锁的粒度
@@ -9,7 +9,7 @@ ConcurrentHashMap中的分段锁称为Segment，它即类似于HashMap的结构�
 内部结构
 
 ConcurrentHashMap使用分段锁技术，将数据分成一段一段的存储，然后给每一段数据配一把锁，当一个线程占用锁访问其中一个段数据的时候，其他段的数据也能被其他线程访问，能够实现真正的并发访问。如下图是ConcurrentHashMap的内部结构图：
-![[fmxbkgw7.bmp]]
+![[ConcurrentHashMap的内部结构图.bmp]]
 
 从上面的结构我们可以了解到，ConcurrentHashMap定位一个元素的过程需要进行两次Hash操作。
 

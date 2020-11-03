@@ -6,7 +6,7 @@ MHA（Master High Availability）目前在MySQL高可用方面是一个相对成
 
 MHA Manager会定时探测集群中的master节点，当master出现故障时，它可以自动将最新数据的slave提升为新的master，然后将所有其他的slave重新指向新的master。整个故障转移过程对应用程序完全透明。
 
-![[x7sfnswy.bmp]]
+![[Mysql高可用方案MHA.bmp]]
 
 
 ## PXC
@@ -27,4 +27,4 @@ Percona XtraDB Cluster是MySQL高可用性和可扩展性的解决方案, 的特
 2. 不能有效的解决写缩放问题，所有的写操作都将发生在所有节点上。
 3. 有多少个节点就有多少重复的数据。
 
-![[20an7b47.bmp]]
+![[Mysql高可用方法PXC.bmp]]

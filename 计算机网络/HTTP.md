@@ -2,13 +2,11 @@
 # 一 、基础概念
 ## URI
 URI 包含 URL 和 URN。
-![6c8048d45ab2d580d81a13829c8405ce.png](en-resource://database/724:1)
-
 ## 请求和响应报文
 ### 1. 请求报文
-![[724_1.png]]
+![[URI.png]]
 ### 2. 响应报文
-![[726_1.png]]
+![[响应报文格式.png]]
 ## 二、[[HTTP 方法]]
 GET，HEAD，POST，PUT，PATCH，DELETE，OPTIONS，CONNECT，TRACE
 

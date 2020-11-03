@@ -2,8 +2,8 @@ Java集合框架 (Java Collections Framework, JCF) 也称容器，这里可以�
 Java集合框架提供了数据持有对象的方式，提供了对数据集合的操作。Java 集合框架位于 java.util 包下，主要有三个大类：Collection(接口)、Map(接口)、集合工具类。
 
 ### 整体框架 
-![[804_1.png]]
-![[v5485qzx.bmp]]
+![[Java集合整体框架.png]]
+![[Java集合整体框架2.bmp]]
 
 [[Arrays.asList()使用指南]]
 

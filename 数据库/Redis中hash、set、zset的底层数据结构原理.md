@@ -4,10 +4,10 @@ hash的底层存储有两种数据结构，一种是ziplist，另外一种是has
 - hash对象保存的键和值字符串长度都小于64字节
 - hash对象保存的键值对数量小于512
 #### ziplist存储的结构
-![[lt1eqnum.bmp]]
+![[ziplist存储结构.bmp]]
 上图中可以看到，当数据量比较小的时候，我们会将所有的key及value都当成一个元素，顺序的存入到ziplist中，构成有序。
 #### hashtable存储的结构 
-![[xbi1pmj3.bmp]]
+![[hashtable存储结构.bmp]]
 
 
 
@@ -34,7 +34,7 @@ typedef struct intset {
 	int8_t contents[];
 } intset;
 ```
-![[4mzh7ic0.bmp]]
+![[intset底层结构.bmp]]
 查询方式一般采用二分查找法，实际查询复杂度也就在log(n)
 ## [[zset底层存储结构]]
 zset为有序（有限score排序，score相同则元素字典序），自动去重的集合数据类型，其底层实现为 字典（dict） + 跳表（skiplist），当数据比较少的时候用ziplist编码结构存储。
