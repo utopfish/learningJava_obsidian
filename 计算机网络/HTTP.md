@@ -1,11 +1,11 @@
 
-# 一 、基础概念
-## URI
+## 一 、基础概念
+#### URI
 URI 包含 URL 和 URN。
-## 请求和响应报文
-### 1. 请求报文
+#### 请求和响应报文
+**1. 请求报文**
 ![[URI.png]]
-### 2. 响应报文
+**2. 响应报文**
 ![[响应报文格式.png]]
 ## 二、[[HTTP 方法]]
 GET，HEAD，POST，PUT，PATCH，DELETE，OPTIONS，CONNECT，TRACE
