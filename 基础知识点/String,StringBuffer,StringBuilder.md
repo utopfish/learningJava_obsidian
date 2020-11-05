@@ -7,7 +7,7 @@
  - StringBuffer 是线程安全的。
  - StringBuilder 不是线程安全的。
  
- 但它们两个中的所有方法都是相同的，StringBuffer 在 StringBuilder 的方法之上添加了 synchronized 修饰，保证线程安全
+ 但它们两个中的所有方法都是相同的，StringBuffer 在 StringBuilder 的方法之上添加了 synchronized 修饰，保证线程安全。
  
  **性能**
  - **StringBuilder 比 StringBuffer 拥有更好的性能**
