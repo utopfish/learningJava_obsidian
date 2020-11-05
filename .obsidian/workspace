@@ -1,0 +1,89 @@
+{
+  "main": {
+    "id": "9d688789b20795c2",
+    "type": "split",
+    "children": [
+      {
+        "id": "b2ef2552b38719be",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Spring/Spring MVC.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a71899f5a9612dfe",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c4dc2609ffbc715",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a26d921f58e4fd2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c21df8a11cb8d723",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "消息队列"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c4dd951f84d7f230",
+    "type": "split",
+    "children": [
+      {
+        "id": "b39489fd84afeb7e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9dd7b0ce5531e01d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Spring/Spring MVC.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "lastOpenFiles": [
+    "Spring/Spring MVC.md",
+    "Spring MVC.md",
+    "5n8x3o1h.bmp",
+    "o0sadk06.bmp",
+    "Spring常见问题总结.md",
+    "列举一些重要的Spring模块.md",
+    "Spring IOC & AOP.md",
+    "Spring bean.md",
+    "腾讯云面试.md",
+    "char和varchar的区别.md"
+  ]
+}
