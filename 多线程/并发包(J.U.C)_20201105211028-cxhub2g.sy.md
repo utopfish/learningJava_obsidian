@@ -1,0 +1,8 @@
+- concurrent下面的包
+  - Executor  用来创建线程池，在实现Callable接口时，添加线程。
+  - FeatureTask 此 FutureTask 的 get 方法所返回的结果类型。
+  - TimeUnit
+  - Semaphore
+  - LinkedBlockingQueue
+- 所用过的类
+  - Executor
