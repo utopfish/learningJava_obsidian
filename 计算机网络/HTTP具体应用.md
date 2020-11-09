@@ -39,10 +39,10 @@ HTTPS 并不是新协议，而是让 HTTP 先和 SSL（Secure Sockets Laye
 - 新增状态码 100
 - 支持分块传输编码
 - 新增缓存处理指令 max-age
-## 九、[[GET 和 POST 比较]]
-[[GET 和 POST 比较#作用]]
-[[GET 和 POST 比较#参数]]
-[[GET 和 POST 比较#安全]]
-[[GET 和 POST 比较#幂等性]]
-[[GET 和 POST 比较#可缓存]]
-[[GET 和 POST 比较#XMLHttpRequest]]
+## 九、[[GET和POST比较]]
+[[GET和POST比较#作用]]
+[[GET和POST比较#参数]]
+[[GET和POST比较#安全]]
+[[GET和POST比较#幂等性]]
+[[GET和POST比较#可缓存]]
+[[GET和POST比较#XMLHttpRequest]]
