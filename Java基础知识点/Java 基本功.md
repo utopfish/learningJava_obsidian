@@ -42,7 +42,7 @@
 
  [[Collection]]
 [[Map]]
-[[基础知识点/ConcurrentHashMap]]
+[[ConcurrentHashMap]]
 　
  ## [[Java并发编程（锁部分内容未完成）]]
  ……
