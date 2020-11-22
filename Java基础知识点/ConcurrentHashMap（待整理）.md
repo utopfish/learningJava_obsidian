@@ -1,3 +1,27 @@
+众所周知，哈希表是中非常高效，复杂度为 O(1) 的数据结构，在 Java 开发中，我们最常见到最频繁使用的就是 HashMap 和 Hashtable，但是在线程竞争激烈的并发场景中使用都不够合理。
+**HashMap** ：先说 HashMap，HashMap 是**线程不安全**的，在并发环境下，可能会形成**环状链表**（扩容时可能造成），导致 get 操作时，cpu 空转，所以，在并发环境中使 用HashMap 是非常危险的。
+**Hashtable** ： Hashtable 和 HashMap的实现原理几乎一样，差别无非是：
+1. Hashtable不允许key和value为null。
+2. Hashtable是线程安全的。
+
+
+但是 Hashtable 线程安全的策略实现代价却太大了，简单粗暴，get/put 所有相关操作都是 synchronized 的，这相当于给整个哈希表加了一把大锁，多线程访问时候，只要有一个线程访问或操作该对象，那其他线程只能阻塞，相当于将所有的操作串行化，在竞争激烈的并发场景中性能就会非常差。
+  
+  
+Hashtable 性能差主要是由于所有操作需要竞争同一把锁，而如果容器中有多把锁，每一把锁锁一段数据，这样在多线程访问时不同段的数据时，就不会存在锁竞争了，这样便可以有效地提高并发效率。这就是ConcurrentHashMap 所采用的 "分段锁" 思想。
+## jdk7和jdk8中ConcurrentHashMap的实现方法
+在JDK1.7及其之前ConcurrentHashMap实现线程安全的方法相对比较简单：
+
+- 其内部将数据分为数个“段（Segment）”，其数量和并发级别有关系，具体是“大于等于并发级别的最小的2的幂次”。
+- 每个segment使用单独的ReentrantLock（分段锁）。
+- 如果操作涉及不同segment，则可以并发执行，如果是同一个segment则会进行锁的竞争和等待。此设计的效率是高于synchronized的。
+
+
+不过JDK8之后，ConcurrentHashMap舍弃了ReentrantLock，而重新使用了synchronized。其原因大致有一下几点：
+
+- 加入多个分段锁浪费内存空间。生产环境中， map 在放入时竞争同一个锁的概率非常小，分段锁反而会造成更新等操作的长时间等待。
+- 为了提高 GC 的效率
+
 主要就是为了应对hashmap在并发环境下不安全而诞生的，ConcurrentHashMap的设计与实现非常精巧，大量的利用了volatile，final，CAS等lock-free技术来减少锁竞争对于性能的影响。
 我们都知道Map一般都是数组+链表结构（JDK1.8该为数组+红黑树）。
 ![[数组+链表结构.bmp]]
