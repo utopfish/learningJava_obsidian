@@ -3,7 +3,8 @@
 - 点乘运算，符号：`\cdot`，如：$x \cdot y=z$
 - 星乘运算，符号：`\ast`，如：$x \ast y=z$
 - 分式表示，符号：`\frac{分子}{分母}`，如：$\frac{x+y}{y+z}$
-- 分式表示，符号：`{分子} \voer {分母}`，如：${x+y} \over {y+z}$
+- quad空格，符号：`\quad`，如：$x \quad y$
+- 求和运算，符号：`\sum`，如：$\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$
 ## 行内与独行
 
 - 行内公式：将公式插入到本行内，符号：`$公式内容$`，如：$xyz$
@@ -37,6 +38,8 @@
 - 括号，符号：（`）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)`，如：$（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)$
 - 中括号，符号：`[]`，如：$[x+y]$
 - 大括号，符号：`\{ \}`，如：${x+y}$
+- 向上取整 ，符号：`\lceil \rceil` 	$\lceil \ \rceil$
+- 向下取整 ，符号：`\lfloor \rfloor `	 	$\lfloor \ \rfloor$
 - 自适应括号，符号：`\left \right`，如：$\left(x\right)$，$\left(x{yz}\right)$
 - 组合公式，符号：`{上位公式 \choose 下位公式}`，如：${n+1 \choose k}={n \choose k}+{n \choose k-1}$
 - 组合公式，符号：`{上位公式 \atop 下位公式}`，如：$\sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$
