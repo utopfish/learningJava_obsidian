@@ -7,7 +7,7 @@ URI 包含 URL 和 URN。
 ![[URI.png]]
 **2. 响应报文**
 ![[响应报文格式.png]]
-## 二、[[HTTP 方法]]
+## 二、[[HTTP方法]]
 GET，HEAD，POST，PUT，PATCH，DELETE，OPTIONS，CONNECT，TRACE
 
 ##  三、[[HTTP 状态码]]

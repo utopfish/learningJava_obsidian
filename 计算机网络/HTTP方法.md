@@ -55,8 +55,6 @@ DELETE /file.html HTTP/1.1
 ```html
 CONNECT www.example.com:443 HTTP/1.1
 ```
-![723bddb072111f15027915fcb68b13eb.png](en-resource://database/730:1)
-
 ## TRACE
 > 追踪路径
 
