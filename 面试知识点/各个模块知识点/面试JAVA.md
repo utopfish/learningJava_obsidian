@@ -16,8 +16,7 @@ synchroniezed，volatile
 [[负数的十六进制表示]]
 #### 类的加载机制（加载、验证、准备、解析、初始化，每部分做了什么）
 [[类的生命周期#类加载过程]]
-#### CAS 是什么呢？
-[[Atomic 与 CAS 待完善#Compare And Swap]]
+#### [[CAS]] 是什么呢？
 #### 乐观锁什么是悲观锁？
 [[乐观锁和悲观锁]]
 #### 线程间的同步方式？（共享变量、wait/notify、condition 的 await/signal、父子线程可以通过 InhritableThreadLocal、消息队列）

@@ -65,7 +65,7 @@ synchronized 和 Lock 也能够保证可见性，synchronized 和 Lock 能保证
  乐观锁：假设不会发生并发冲突
 5. [[偏向锁]]
 6. [[自旋锁]]
-[[Atomic 与 CAS 待完善]]
+[[CAS]]
 
 #### 3. [[基础线程机制]]
 
@@ -87,7 +87,7 @@ AQS 是  AbstractQueuedSynchronizer （抽象的队列式同步器）的简称�
 
 #### 9. [[线程不安全示例]]
 
-#### 10. [[JMM（未完成）]]
+#### 10. [[JMM]]
 
 
 #### 11. [[线程安全]]
