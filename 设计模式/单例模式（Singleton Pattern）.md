@@ -4,10 +4,10 @@ public class Singleton{
 	private volatile static Singleton singleton;//volatile 修饰
 	private Singleton(){}
 	public static Singleton getSingleton(){
-		if (singleton==null){ //减少不必要的同步
+		if (singleton == null){ //减少不必要的同步
 			synchronized (Singleton.class){ //同步加锁
-				if (singleton==null){//防止可能出现多个实例的情况
-				singleton=new Singleton();//创建对象
+				if (singleton == null){//防止可能出现多个实例的情况
+				singleton = new Singleton();//创建对象
 				}
 			}
 		}
@@ -23,9 +23,9 @@ public class Singleton{
 **为什么要使用volatile修饰？**
 虽然已经使用synchronized进行同步，但在第4步创建对象时，会有下面的伪代码：
 ```
-memory=allocate(); //1：分配内存空间
+memory = allocate(); //1：分配内存空间
 ctorInstance();   //2:初始化对象
-singleton=memory; //3:设置singleton指向刚排序的内存空间
+singleton = memory; //3:设置singleton指向刚排序的内存空间
 ```
 复制代码当线程A在执行上面伪代码时，2和3可能会发生重排序，因为重排序并不影响运行结果，还可以提升性能，所以JVM是允许的。如果此时伪代码发生重排序，步骤变为1->3->2,线程A执行到第3步时，线程B调用getsingleton方法，在判断singleton==null时不为null，则返回singleton。但此时singleton并还没初始化完毕，**线程B访问的将是个还没初始化完毕的对象**。当声明对象的引用为volatile后，伪代码的2、3的重排序在多线程中将被禁止!
 
@@ -36,8 +36,8 @@ public class Singleton{
 	pirvate static Singleton singleton;
 	private Singleton(){}
 	public static Singleton getSingleton(){
-		if (singleton==null){
-			singleton=new Singleton();
+		if (singleton == null){
+			singleton = new Singleton();
 		}
 		return singleton;
 	}

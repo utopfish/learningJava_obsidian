@@ -20,11 +20,7 @@ BlockingQueue即阻塞队列，从阻塞这个词可以看出，在某些情况�
 ```java
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-/**
- * 使用BlockingQueue实现生产者消费者模型
- * @author ZGJ
- * @date 2017年6月29日
- */
+
 public class Test3 {
     private static Integer count = 0;
     //创建一个阻塞队列
