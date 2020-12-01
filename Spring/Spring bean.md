@@ -79,7 +79,7 @@ public OneService getService(status) {
 - 当要销毁 Bean 的时候，如果 Bean 在配置文件中的定义包含 destroy-method 属性，执行指定的方法。
 
 图示：
-![[Spring Bean 生命周期.png]]
+![[SpringBean生命周期.png]]
 
 
 与之比较类似的中文版本:
