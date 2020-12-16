@@ -5,3 +5,5 @@
 2020-12-02 去掉一些数据分析相关的知识，前端不再添加
 java知识结构以《java核心技术卷一二》目录为纲
 数据库以《数据库设计概论》，《高性能MySQL》，《高可用MySQKL》目录为纲。
+
+2020-12-14 加入[设计模式](https://refactoringguru.cn/design-patterns)
