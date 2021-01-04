@@ -8,7 +8,7 @@
 ```sh
 (master)$ git show
 ```
-
+(按q退出)
 或者
 
 ```sh
