@@ -5,7 +5,7 @@ Spring 是一种轻量级开发框架，旨在提高开发人员的开发效率�
 
 
 #### 3. [[@RestController vs @Controller]]
-Controller 返回一个页面，Controller 返回一个页面，@Controller +@ResponseBody 返回JSON 或 XML 形式数据
+Controller 返回一个页面，@Controller +@ResponseBody 返回JSON 或 XML 形式数据
 
 #### 4. [[Spring IOC & AOP]]
 [[Spring IOC & AOP#IoC]]、[[Spring IOC & AOP#AOP]]、[[Spring IOC & AOP#Spring AOP 和 AspectJ AOP 有什么区别？]]
