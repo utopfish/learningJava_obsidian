@@ -1,4 +1,4 @@
-1. 简介
+## 简介
 [[synchronized与lock的区别]]
 [[Synchronized（对象锁）和Static Synchronized（类锁）区别]]
 [[volatile 与 synchronized 的区别]]
