@@ -67,3 +67,6 @@ AOP(Aspect-Oriented Programming:面向切面编程)能够将那些与业务无�
 	2.基于拦截器拦截待执行SQL语句，然后修改最终执行SQL语句。属于物理分页。
     -   Mybatis 的插件运行原理，写一个插件？
     -   xml文件如何和dao接口进行一一对应？(动态代理)
+	
+	
+Spring、SpringMVC、SpringBoot的区别
