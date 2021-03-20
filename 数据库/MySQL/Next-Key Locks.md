@@ -6,6 +6,7 @@ MVCC 不能解决幻影读问题，Next-Key Locks 就是为了解决这个问题
 
 如果表没有设置索引，InnoDB 会自动在主键上创建隐藏的聚簇索引，因此 Record Locks 依然可以使用。
 ## Gap Locks
+对于键值在条件范围内但并不存在的记录，叫做“间隙(GAP)”
 锁定索引之间的间隙，但是不包含索引本身。例如当一个事务执行以下语句，其它事务就不能在 t.c 中插入 15。
 ```
 SELECT c FROM t WHERE c BETWEEN 10 and 20 FOR UPDATE;

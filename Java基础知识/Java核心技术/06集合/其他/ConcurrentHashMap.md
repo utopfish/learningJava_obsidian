@@ -46,3 +46,6 @@ ConcurrentHashMap使用分段锁技术，将数据分成一段一段的存储，
 ## JDK1.8版本的 CurrentHashMap 的实现原理
 JDK8 中 ConcurrentHashMap 参考了 JDK8 HashMap 的实现，采用了数组+链表+红黑树的实现方式来设计，内部大量采用 CAS 操作，这里我简要介绍下[[CAS]]。
 
+CAS：在判断数组中当前位置为null的时候，使用CAS来把这个新的Node写入数组中对应的位置
+synchronized ：当数组中的指定位置不为空时，通过加锁来添加这个节点进入数组(链表<8)或者是红黑树（链表>=8）
+

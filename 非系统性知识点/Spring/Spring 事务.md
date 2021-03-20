@@ -7,6 +7,9 @@
 - 基于注解的声明式事务
 
 ## 2. Spring 事务中的隔离级别有哪几种?
+
+
+
 TransactionDefinition 接口中定义了五个表示隔离级别的常量：
 1. TransactionDefinition.ISOLATION_DEFAULT: 使用后端数据库默认的隔离级别，Mysql 默认采用的 REPEATABLE_READ隔离级别 Oracle 默认采用的 READ_COMMITTED隔离级别。
 2. TransactionDefinition.ISOLATION_READ_UNCOMMITTED: 最低的隔离级别，允许读取尚未提交的数据变更，可能会导致脏读、幻读或不可重复读。TransactionDefinition.ISOLATION_READ_COMMITTED: 允许读取并发事务已经提交的数据，可以阻止脏读，但是幻读或不可重复读仍有可能发生。
@@ -14,6 +17,7 @@ TransactionDefinition 接口中定义了五个表示隔离级别的常量：
 4. TransactionDefinition.ISOLATION_SERIALIZABLE: 最高的隔离级别，完全服从ACID的隔离级别。所有的事务依次逐个执行，这样事务之间就完全不可能产生干扰，也就是说，该级别可以防止脏读、不可重复读以及幻读。但是这将严重影响程序的性能。通常情况下也不会用到该级别。
 
 ## 3. Spring 事务中哪几种事务传播行为?
+简单的理解就是多个事务方法相互调用时,事务如何在这些方法间传播。
 支持当前事务的情况：
 - TransactionDefinition.PROPAGATION_REQUIRED： 如果当前存在事务，则加入该事务；如果当前没有事务，则创建一个新的事务。
 - TransactionDefinition.PROPAGATION_SUPPORTS： 如果当前存在事务，则加入该事务；如果当前没有事务，则以非事务的方式继续运行。
