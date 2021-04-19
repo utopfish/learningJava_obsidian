@@ -1,5 +1,3 @@
-
-
 如何做好代码 Review
 ## 什么时候发起 Review
 在代码 Review 上，Author 需要意识到：Reviewer 的时间是昂贵的。因此在正式邀请 Reviewer 发起代码 Review 前，Author 有几项需要注意的点，这些都能提高代码 Review 的效率，节省 Reviewer 的时间。
